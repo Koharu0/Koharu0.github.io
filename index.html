@@ -1,6 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Breeze</title>
+    <meta charset="UTF-8">
+    <title>Language Selection</title>
 </head>
 <body>
-  <h1>Hello, World!</h1>
+    <label id="lang" for="language-select">Language Selection:</label>
+    <select id="language-select" name="languages" onchange="changeLanguage()">
+        <option value="en">English</option>
+        <option value="ko">한국어</option>
+        <option value="ca">català</option>
+    </select>
+    <h1 id="greeting">Hello!</h1>
+
+    <script>
+        function changeLanguage() {
+            const languageSelect = document.getElementById('language-select');
+            const lang = document.getElementById('lang');
+            const greeting = document.getElementById('greeting');
+
+            switch (languageSelect.value) {
+                case 'en':
+                    greeting.textContent = 'Hello!';
+                    lang.textContent = 'Language Selection';
+                    break;
+                case 'ko':
+                    greeting.textContent = '안녕하세요!';
+                    lang.textContent = '언어 선택';
+                    break;
+                case 'ca':
+                    greeting.textContent = 'Hola!';
+                    lang.textContent = "dSelecció d'idioma";
+                    break;
+                default:
+                    greeting.textContent = 'Hello!';
+                    lang.textContent = 'Language Selection';
+            }
+        }
+        changeLanguage();
+    </script>
 </body>
+</html>
