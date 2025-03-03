@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breeze Messenger</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid #ddd;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+        /* 부드러운 스크롤 효과 */
+        html {
+          scroll-behavior: smooth;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h2 {
+            margin-top: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .product-list {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-item {
+            width: 30%;
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .feature-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.8em;
+            color: #666;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Breeze Inc.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>                   
+                    <li><a href="mailto:contact@breeze.cat">Contact</a></li>
+                    <li><a href="Breeze_latest.apk" download>Download</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2>About the Company Behind Breeze</h2>
+                <p>
+                    Breeze Inc. develops a messenger that prioritizes security and privacy above all else.<br>
+                    Our goal is to create a space where everyone can communicate freely and with peace of mind.<br>
+                    We are constantly striving to provide a secure and convenient communication experience that goes beyond simple message delivery.
+                </p>
+                <p>
+                    <strong>Our Core Values:</strong>
+                </p>
+                <ul>
+                    <li><strong>Privacy:</strong> We protect user data and manage it transparently.</li>
+                    <li><strong>Security:</strong> We prevent message leaks through strong encryption.</li>
+                    <li><strong>Convenience:</strong> We provide an intuitive and easy-to-use interface.</li>
+                    <li><strong>Reliability:</strong> We provide a stable service that you can always count on.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Breeze Messaging App</h2>
+                <div class="product-list">
+                    <div class="product-item">
+                        <i class="bi bi-shield-lock feature-icon"></i>
+                        <h3 class="feature-title">Unbreakable Privacy</h3>
+                        <p>Breeze protects your messages with end-to-end encryption.
+                        Only you and the recipient can read your messages.</p>
+                    </div>
+                    <div class="product-item">
+                        <i class="bi bi-shield-shaded feature-icon"></i>
+                        <h3 class="feature-title">Ironclad Security</h3>
+                        <p>Breeze uses cutting-edge security technology to keep you safe from hacking and data breaches.
+                        </p>
+                    </div>
+                    <div class="product-item">
+                        <i class="bi bi-chat-square-dots feature-icon"></i>
+                        <h3 class="feature-title">User-Friendly Interface</h3>
+                        <p>Breeze provides an intuitive and convenient interface that anyone can easily use.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Contact</h2>
+                <p>
+                    Email: contact@breeze.cat<br>
+                    Please feel free to email us with any inquiries.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Breeze Inc. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
